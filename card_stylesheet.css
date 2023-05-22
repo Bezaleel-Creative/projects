@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    
+    background-color: rgb(221, 221, 221);
+}
+
+main{
+    padding-top: 10%;
+    padding-bottom: 10%;
+    width: 100%;
+}
+
+.container{
+    /* padding: 40px; */
+    width: 35%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 8px;
+    box-shadow: 1px 1px 6px #a7a7a7;
+}
+
+.box1{
+    width: 100%;
+    /* flex-grow: 1; */
+    background-color: #fff;
+    padding: 30px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+h1{
+    color: #42ffd6;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+h2{
+    color: #e6b30e;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+p{
+    font-size: 11px;
+    margin-bottom: 5px;
+}
+
+.box2, .box3{
+    width: 50%;
+    padding: 30px;
+}
+
+.box2{
+    background-color: #32bb9d;
+    border-bottom-left-radius: 8px;
+    color: #fff;
+}
+.box3{
+    background-color: #34d6b3;
+    border-bottom-right-radius: 8px;
+    color: #fff;
+}
+
+#sub{
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+span{
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    top: 3px;
+    color: #fff;
+}
+
+.box2 #per{
+    color: rgb(228, 226, 226);
+}
+
+#full{
+    font-size: 9px;
+    margin-bottom: 25px;
+}
+
+input[type='submit']{
+    outline: none;
+    border: none;
+    width: 100%;
+    background-color: #3bda0a;
+    color: #fff;
+    font-size: 11px;
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid rgb(2, 153, 2);
+    border-radius: 4px;
+    box-shadow: 1px 1px 5px rgba(128, 128, 128, 0.973);
+    transition: 0.25s ease-in;
+}
+
+input[type='submit']:hover{
+    background-color: #68f83c;
+}
+input[type='submit']:active{
+    background-color: #3ccc10;
+}
+
+h3{
+    font-size: 11px;
+    margin-bottom: 15px;
+}
+
+.box3 p {
+    font-size: 10px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 3px;
+}
+
+
+@media screen and (max-width: 850px){
+    .box2, .box3{
+        width: 100%;
+        padding: 10%;
+    }
+
+    .box2{
+        border-bottom-left-radius: 0px;
+    }
+
+    .box3{
+        border-bottom-left-radius: 8px;
+    }
+    .box1{
+        padding: 10%;
+    }
+    
+}
+
+@media screen and (max-width: 450px){
+    .container{
+        width: 50%;
+    }
+
+    
+}
